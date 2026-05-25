@@ -1,142 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busqueda</title>
+
     <link rel="icon" type="image/x-icon" href="../Recursos/icono.ico">
-    <link rel="stylesheet" 
+
+    <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body style="background-color: rgb(248, 252, 255); font-family: Arial, Helvetica, sans-serif;">
 
+<body style="background-color: rgb(248, 252, 255); font-family: Arial, Helvetica, sans-serif; margin: 0;">
 
-    <main style="background-color: white; width: 100%; height: 100px; 
-    display: flex; align-items: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-        <img src="../Recursos/panelUsuario/iconousuario.png" width="80px" s
-        tyle="margin-left: 30px;">
-        <h1 style="font-size: 26px; margin-left: 40px;">
-            Ventana de búsqueda
+    <main style="background-color: white; width: 100%; min-height: 100px;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 10px 3%; box-sizing: border-box;">
+
+        <div style="display: flex; align-items: center; flex-wrap: wrap;">
+
+            <img src="../Recursos/panelUsuario/iconousuario.png"
+            style="width: 80px; max-width: 100%;">
+
+            <h1 style="font-size: 2rem; margin-left: 20px; color: rgb(30,30,30);">
+                Ventana de búsqueda
             </h1>
-        <button style="width: 140px; height: 45px; background-color: white; 
-        border: 2px solid gray; border-radius: 10px; margin-left: 750px;">
-            <a href="panelUsuario.html" style="text-decoration: none; 
+
+        </div>
+
+        <button style="width: 140px; height: 45px; background-color: white;
+        border: 2px solid gray; border-radius: 10px; cursor: pointer;">
+
+            <a href="panelUsuario.html" style="text-decoration: none;
             color: rgb(60, 59, 59); font-weight: bold; font-size: 18px;">
+
                 <i class="fa-solid fa-house"></i>
                 Volver
+
             </a>
+
         </button>
+
     </main>
 
-<<<<<<< HEAD
-    <aside style="display: flex;">
-        <section style="background-color: white; width: 800px; height: 450px; 
-        box-shadow: 0 4px 12px; border-radius: 15px; margin: 50px auto; 
-        display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            
-            <input type="text" id="busqueda" name="busqueda" required p
+    <aside style="display: flex; flex-wrap: wrap;
+    justify-content: center; gap: 30px; padding: 40px 2%;">
+
+        <section style="background-color: white;
+        width: 90%; max-width: 800px; min-height: 450px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border-radius: 15px;
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+        padding: 20px; box-sizing: border-box;">
+
+            <input type="text" id="busqueda" name="busqueda" required
             placeholder="Busca por nombre o materia"
-                style="width: 80%; height: 45px; border: 2px solid gray; 
-                border-radius: 10px; font-size: 18px; padding-left: 15px; margin-bottom: 20px;">
+            style="width: 90%; height: 50px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 18px;
+            padding-left: 15px;
+            margin-bottom: 25px;
+            box-sizing: border-box;">
 
+            <img src="../Recursos/panelUsuario/lupa.png"
+            style="width: 100px; max-width: 30%;">
 
-            <img src="../Recursos/panelUsuario/lupa.png" width="100px">
-
-            <p style="margin-top: 15px; color: gray; font-size: 14px; text-align: center;">
+            <p style="margin-top: 20px; color: gray;
+            font-size: 15px; text-align: center; width: 90%;">
                 Ingresa un nombre o materia para encontrar compañeros de estudio
             </p>
+
         </section>
 
-        <section style="background-color: white; width: 650px; height: 450px; 
-        box-shadow: 0 4px 12px; border-radius: 15px; margin: 50px auto; 
-        display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-            
-            <h1 style="font-size: 24px; margin-left: 40px; margin-bottom: 30px;">
+        <section style="background-color: white;
+        width: 90%; max-width: 650px; min-height: 450px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border-radius: 15px;
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+        text-align: center;
+        padding: 20px; box-sizing: border-box;">
+
+            <h1 style="font-size: 1.7rem;
+            margin-bottom: 30px; color: rgb(30,30,30);">
                 Mejores Mentores segun sus conocimientos
             </h1>
-            
-            <table border="1" style="width: 600px;">
-    
-            <tr style="background-color: gainsboro; font-family: Arial, Helvetica, sans-serif;">
-                <th>Nombre</th>
-                <th>Edad</th>
-                <th>Carrera</th>
-                <th>Conocimientos Verificados</th>
-            </tr>
 
-            <tr>
-                <td>Christopher</td>
-                <td>20</td>
-                <td>Ingeniería</td>
-                <td>
-                    <progress value="82" max="100" title="82/100" style="width: 180px; margin: 10px;
-                    height: 35px; accent-color: rgb(77, 35, 151);"></progress>
-                </td>
-            </tr>
+            <div style="width: 100%; overflow-x: auto;">
 
-            <tr>
-                <td>Eduardo</td>
-                <td>22</td>
-                <td>Interfaces</td>
-                <td>
-                    <progress value="95" max="100" title="95/100" style="width: 180px; margin: 10px;
-                    height: 35px; accent-color: rgb(77, 35, 151);"></progress>
-                </td>
-            </tr>
+                <table border="1"
+                style="width: 100%;
+                border-collapse: collapse;
+                min-width: 550px;">
 
-            <tr>
-                <td>Bianka</td>
-                <td>18</td>
-                <td>Administracion de sistemas</td>
-                <td>
-                    <progress value="75" max="100" title="75/100" style="width: 180px; margin: 10px;
-                    height: 35px; accent-color: rgb(77, 35, 151);"></progress>
-                </td>
-            </tr>
+                    <tr style="background-color: gainsboro;">
+                        <th style="padding: 10px;">Nombre</th>
+                        <th style="padding: 10px;">Edad</th>
+                        <th style="padding: 10px;">Carrera</th>
+                        <th style="padding: 10px;">Conocimientos Verificados</th>
+                    </tr>
 
-            <tr>
-                <td>María</td>
-                <td>22</td>
-                <td>Programación</td>
-                <td>
-                    <progress value="100" max="100" title="100/100" style="width: 180px; margin: 10px;
-                    height: 35px; accent-color: rgb(77, 35, 151);"></progress>
-                </td>
-            </tr>
+                    <tr>
+                        <td>Christopher</td>
+                        <td>20</td>
+                        <td>Ingeniería</td>
+                        <td>
+                            <progress value="82" max="100"
+                            title="82/100"
+                            style="width: 80%;
+                            height: 35px;
+                            accent-color: rgb(77, 35, 151);">
+                            </progress>
+                        </td>
+                    </tr>
 
-            <tr>
-                <td>Juan</td>
-                <td>19</td>
-                <td>Base de datos</td>
-                <td>
-                    <progress value="68" max="100" title="68/100" style="width: 180px; margin: 10px;
-                    height: 35px; accent-color: rgb(77, 35, 151);"></progress>
-                </td>
-            </tr>
+                    <tr>
+                        <td>Eduardo</td>
+                        <td>22</td>
+                        <td>Interfaces</td>
+                        <td>
+                            <progress value="95" max="100"
+                            title="95/100"
+                            style="width: 80%;
+                            height: 35px;
+                            accent-color: rgb(77, 35, 151);">
+                            </progress>
+                        </td>
+                    </tr>
 
-        </table>
+                    <tr>
+                        <td>Bianka</td>
+                        <td>18</td>
+                        <td>Administracion de sistemas</td>
+                        <td>
+                            <progress value="75" max="100"
+                            title="75/100"
+                            style="width: 80%;
+                            height: 35px;
+                            accent-color: rgb(77, 35, 151);">
+                            </progress>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>María</td>
+                        <td>22</td>
+                        <td>Programación</td>
+                        <td>
+                            <progress value="100" max="100"
+                            title="100/100"
+                            style="width: 80%;
+                            height: 35px;
+                            accent-color: rgb(77, 35, 151);">
+                            </progress>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Juan</td>
+                        <td>19</td>
+                        <td>Base de datos</td>
+                        <td>
+                            <progress value="68" max="100"
+                            title="68/100"
+                            style="width: 80%;
+                            height: 35px;
+                            accent-color: rgb(77, 35, 151);">
+                            </progress>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+
         </section>
+
     </aside>
-    
-=======
-
-    <section style="background-color: white; width: 800px; height: 350px; 
-    box-shadow: 0 4px 12px; border-radius: 15px; margin: 50px auto; 
-    display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        
-        <input type="text" id="busqueda" name="busqueda" required p
-        placeholder="Busca por nombre o materia"
-            style="width: 80%; height: 45px; border: 2px solid gray; 
-            border-radius: 10px; font-size: 18px; padding-left: 15px; margin-bottom: 20px;">
-
-
-        <img src="../Recursos/panelUsuario/lupa.png" width="100px">
-
-        <p style="margin-top: 15px; color: gray; font-size: 14px; text-align: center;">
-            Ingresa un nombre o materia para encontrar compañeros de estudio
-        </p>
-    </section>
->>>>>>> 723754c11962f31b08c2384a250b8c02856d6242
 
 </body>
 </html>
